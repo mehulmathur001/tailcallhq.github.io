@@ -17,7 +17,7 @@ jobs:
 
         with:
           host: "mathurmehul001.hashnode.dev"
-          file: "blogs/**.md"
+          file: "blogs/*.md"
           hashnode_key: ${{secrets.HASHNODE_TOKEN}}
       - name: Get get output
         run: echo "${{steps.publish_hashnode.outputs.result_json}} length ${{steps.publish_hashnode.outputs.result_summary}}"
