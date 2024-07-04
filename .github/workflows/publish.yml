@@ -17,10 +17,9 @@ jobs:
         run: npm install
       - name: Publish to Hashnode
         uses: PritishMishraa/hashnode-publish-action@v1.0.2
-        env:
-          HASHNODE_PAT: ${{ secrets.HASHNODE_TOKEN }}
         with:
           src: "./"
+          HASHNODE_PAT: ${{ secrets.HASHNODE_TOKEN }}
       - name: (AUTO COMMIT) Update Status to Published
         uses: mikeal/publish-to-github-action@master
         env:
