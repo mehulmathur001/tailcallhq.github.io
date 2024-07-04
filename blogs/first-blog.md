@@ -1,9 +1,24 @@
 ---
-title: Coding My First GitHub Action
+# Required! - Title of your blog
+title: Example article title
+
+# This is a flag with a boolean value
+# Will not publish the blog until it's true
+# Recommended! 
+publish: true
+
+# Recommended? - The description of the blog
+description: This is a demo blog with minimum content 
+
+# Recommended! - Provide the relative imageUrl
+cover_image: ../static/images/about/grid-dark.png
+
+# Required! - Keywords or hashtags related to your blog
 tags:
-  - GitHub Actions
-  - Coding
-  - Automation
+  - example
+  - article
+  - blog
+---
 ---
 
 # Coding My First GitHub Action

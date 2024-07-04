@@ -9,17 +9,15 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+
+      - name: Hashnode publish
+        id: publish_hashnode
+        uses: raunakgurud09/hashnode-publish@v1.1
+
         with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm install
-      - name: Publish to Hashnode
-        uses: PritishMishraa/hashnode-publish-action@v1.0.2
-        with:
-          HASHNODE_PAT: ${{ secrets.HASHNODE_TOKEN }}
-      - name: (AUTO COMMIT) Update Status to Published
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          host: "mathurmehul001.hashnode.dev"
+          file: "blogs/**.md"
+          hashnode_key: ${{secrets.HASHNODE_TOKEN}}
+      - name: Get get output
+        run: echo "${{steps.publish_hashnode.outputs.result_json}} length ${{steps.publish_hashnode.outputs.result_summary}}"
