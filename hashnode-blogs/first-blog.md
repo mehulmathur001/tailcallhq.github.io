@@ -1,7 +1,10 @@
 ---
 title: My First Post
 description: My First Ever Blog Post From GitHub repo
-tags: ["github", "hashnode", "automation", "first post"]
+tags:
+  - Next.js
+  - Deployment
+  - Coding
 ---
 
 # My First Post
