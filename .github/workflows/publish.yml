@@ -1,8 +1,9 @@
 name: Publish Blog Posts on Hashnode
+
 on:
   push:
-  paths:
-    - 'hashnode-blogs/**'
+    paths:
+      - 'hashnode-blogs/**'
 
 jobs:
   publish:
