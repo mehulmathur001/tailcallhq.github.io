@@ -1,10 +1,11 @@
 ---
-title: My First Post
-description: My First Ever Blog Post From GitHub repo
+
+title: Deploying Next Apps
 tags:
   - Next.js
   - Deployment
   - Coding
+
 ---
 
 # My First Post
