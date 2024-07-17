@@ -3,7 +3,7 @@ published: false
 title: "Manage your dev.to blog posts from a GIT repo and use continuous deployment to auto publish/update them"
 cover_image: "https://raw.githubusercontent.com/maxime1992/my-dev.to/master/blog-posts/manage-dev-to-blog-posts-with-continuous-deployment/assets/github-travis-dev-to.png"
 description:
-tags: devto, publication, blogpost, continuousdeployment, github, travis
+tags: devto, publication
 series:
 canonical_url:
 ---
