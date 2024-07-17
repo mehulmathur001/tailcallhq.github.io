@@ -2,8 +2,6 @@ name: Publish to Dev To
 
 on:
   push:
-    paths:
-      - "publish-dev-to/**"
 
 jobs:
   build:
