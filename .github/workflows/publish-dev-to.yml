@@ -1,0 +1,20 @@
+name: Publish to Dev To
+
+on:
+  push:
+    paths:
+      - "publish-dev-to/**"
+
+jobs:
+  build:
+    name: Publish to Dev To
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Install and Build 🔧
+        run: npm install
+
+      - name: Deploy to dev.to
+        run: DEV_TO_GIT_TOKEN=${{ secrets.DEV_TO_GIT_TOKEN }} yarn run dev-to-git
