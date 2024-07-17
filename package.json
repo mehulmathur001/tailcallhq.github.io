@@ -1,5 +1,9 @@
 {
   "name": "my-website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehulmathur001/tailcallhq.github.io"
+  },
   "version": "0.0.0",
   "private": true,
   "workspaces": [
